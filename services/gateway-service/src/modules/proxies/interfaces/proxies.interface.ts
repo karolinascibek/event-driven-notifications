@@ -2,7 +2,7 @@ type AuthKey = {
     apiKey: string
 }
 
-export class MicroServiceConfig {
+export class ProxyConfig {
     port: number;
     host: string;
     path: string;

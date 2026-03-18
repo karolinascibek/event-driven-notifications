@@ -6,12 +6,12 @@ import {
 } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ApiResponse } from '@core/interfaces/api-response.interface';
-import { MicroservicesService } from 'modules/microservices/microservices.service';
+import { ProxiesService } from 'modules/proxies/proxies.service';
 
 @Controller('users')
 export class UsersController {
   constructor(
-    @Inject('MICROSERVICE_USERS') private readonly usersMService: MicroservicesService,
+    @Inject('PROXY_USERS') private readonly usersMService: ProxiesService,
   ) {}
 
   @Post()

@@ -1,6 +1,6 @@
-import { MicroServiceConfig } from "@core/interfaces/microservice.interface";
+import { ProxyConfig } from "modules/proxies/interfaces/proxies.interface";
 
-export const config: Record<string, MicroServiceConfig> = {
+export const config: Record<string, ProxyConfig> = {
     USERS: {
         host: 'user-service',
         port: 3002,
